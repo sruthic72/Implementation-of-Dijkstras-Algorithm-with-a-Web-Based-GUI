@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+    margin-top: 0;
+}
+
+#instructions {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+    background: linear-gradient(135deg, #E8E8E8 0%, #F9F9F9 100%);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+canvas:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#controls label {
+    font-weight: bold;
+    color: #333;
+}
+
+select,
+button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #F3F3F3 100%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s, transform 0.1s;
+}
+
+select:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+select:hover,
+button:hover {
+    background: linear-gradient(135deg, #F3F3F3 0%, #E8E8E8 100%);
+}
+
+button {
+    background-color: #FF5733; /* Change the button color to a vibrant orange */
+    color: black; /* Change the button text color to white */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #FF4500; /* Change the button hover color to a darker orange */
+}
+
+button:active {
+    background-color: #FF6A4E; /* Change the button active color to a lighter orange */
+    transform: scale(0.97);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+}

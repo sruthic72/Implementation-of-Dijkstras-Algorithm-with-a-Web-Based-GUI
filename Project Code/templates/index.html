@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Shortest Path Visualizer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <p id="instructions">Click on an empty space to create a node. Click on two nodes consecutively to create an edge.</p>
+    <canvas id="graphCanvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <label for="startNode">Start Node:</label>
+        <select id="startNode"></select>
+        <label for="endNode">Goal Node:</label>
+        <select id="endNode"></select>
+        <button id="computePathBtn">Compute Shortest Path</button>
+        <button id="resetGraph">Reset</button>
+        <p id="pathSum">Shortest Path Sum of Distances: 0</p>
+
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
